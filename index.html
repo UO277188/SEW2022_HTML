@@ -20,12 +20,20 @@
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <h1>Rust</h1>
+    <h2>Menú de navegación</h2>
+    <nav>
+        <a title="Inicio" accesskey="i" tabindex="1" href="index.html">Inicio</a>
+        <a title="Características" tabindex="2" accesskey="c" href="caracteristicas.html">Características de Rust</a>
+        <a title="Tipos" accesskey="t" tabindex="3" href="tipos.html">Tipos en Rust</a>
+        <a title="formulario" accesskey="f" tabindex="4" href="formulario.html">Formulario</a>
+    </nav>
     <p>Rust es un lenguaje de programación compilado, de propósito general y multiparadigma que está siendo desarrollado por Fundación Rust. Es un lenguaje de programación multiparadigmático que soporta programación funcional pura, por procedimientos, imperativa y orientada a objetos.</p>
 
     <h2>Comparación con C</h2>
     <p>El objetivo de Rust es ser un buen lenguaje para la creación de grandes programas del lado del cliente y del servidor que se ejecuten en Internet. Esto ha llevado a un conjunto de características con un énfasis en la seguridad, el control de distribución de la memoria y la concurrencia. Se espera que el rendimiento de código seguro sea más lento que C++, si el rendimiento es la única consideración, pero si lo comparamos con el código C++ hecho para que tome precauciones comparables a las que toma Rust, este último puede ser incluso más rápido.</p> 
 
-    <h2>Ejemplo de función recursiva para calcular el factorial de un número:</h2>
+    <h2>Ejemplo de código</h2>
+    <p>Este fragmento de código es un ejemplo de una función en Rust que calcula el factorial de un número dado de forma recursiva:</p>
     <pre><code>
         fn factorial(i: u64) -> u64 {
             if i == 0 {
