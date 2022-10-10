@@ -2,3 +2,57 @@
 Diego Villa García - UO277188
 Descripción de los estilos
 ******************************/
+
+/* Especificidad 001 */
+header {
+    background-color: rgb(250, 204, 135);
+    border-radius: 0.5em;
+}
+
+/* Especificidad 002 */
+header h1 {
+    vertical-align: auto;
+}
+
+/* Especificidad 002 */
+header nav {
+    padding: 1em;
+    margin: 0.3em;
+}
+
+/* Especificidad 003 */
+header nav a {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    border: 0.3em;
+    border-color: black;
+    border-style: groove;
+}
+
+/* Especificidad 003 */
+main {
+    margin-right: 2em;
+}
+
+/* Especificidad 001 */
+main h2 {
+    background-color: rgb(250, 204, 135);
+    border-radius: 0.2em;
+    padding: 0.2em;
+}
+
+/* Especificidad 001 */
+aside {
+    background-color: rgb(255, 241, 221);
+    border-style: solid;
+    border: 0.3em;
+    border-color: black;
+}
+
+/* Especificidad 002 */
+aside h2, h3 {
+    background-color: rgb(255, 218, 162);
+    border-radius: 0.2em;
+    padding: 0.2em;
+}
+

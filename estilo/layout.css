@@ -1,0 +1,21 @@
+header {grid-area: header;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+                        "main main main aside"
+                        "main main main aside"
+                        "main main main aside"
+                        "footer footer footer footer";
+    gap: 0.5em;
+    padding: 0.2em;
+}
+
+header, main, aside, footer {
+    text-align: left;
+    padding: 0.2em;
+    font-size: 0.9em;
+}

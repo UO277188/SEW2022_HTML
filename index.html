@@ -15,6 +15,7 @@
 
     <title>SEW Práctica 1: Rust </title>
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css"/>
 </head>
 
 <body>
@@ -35,31 +36,29 @@
         <p>Según la política de Mozilla, Rust es desarrollado de forma totalmente abierta y busca la opinión y contribución de la comunidad. El diseño del lenguaje se ha ido perfeccionando a través de las experiencias en el desarrollo del motor de navegador Servo, y el propio compilador de Rust. Aunque es desarrollado y patrocinado por Mozilla y Samsung, es un proyecto comunitario. Una gran parte de las contribuciones proceden de los miembros de la comunidad. Para el 2020 es uno de los lenguajes de programación más usados a la hora de trabajar con criptomonedas y crear nodos para minar criptoactivos.</p>
         <h2>Adopción</h2>
         <p>Según la Encuesta de desarrolladores de Stack Overflow en 2022, el 9% de los encuestados ha realizado recientemente un extenso desarrollo en Rust. La encuesta también ha nombrado a Rust el "lenguaje de programación más querido" cada año desde 2016 hasta 2022 (inclusive), una clasificación basada en el número de desarrolladores actuales que expresan interés en continuar trabajando en el mismo lenguaje. En 2022, Rust empató con Python en la "tecnología más buscada" con el 18% de los desarrolladores que actualmente no trabajan en Rust expresando interés en hacerlo. Rust ha sido adoptado para componentes en varias de las principales compañías de software, incluyendo Amazon, Discord, Dropbox, Facebook (Meta), Google (Alphabet), y Microsoft.</p>
-    
-        <aside>
-            <h3>Fundación Rust</h3>
-            <p>La Fundación Rust es una organización de membresía sin fines de lucro incorporada en los Estados Unidos, con el propósito principal de respaldar el proyecto técnico como una entidad legal y ayudar a administrar los activos de marca e infraestructura. Se estableció el 8 de febrero de 2021 con cinco miembros corporativos fundadores (Amazon Web Services, Huawei, Google, Microsoft y Mozilla).</p>
-        </aside>
-    
+    </main> 
+
+    <aside>
+        <h3>Fundación Rust</h3>
+        <p>La Fundación Rust es una organización de membresía sin fines de lucro incorporada en los Estados Unidos, con el propósito principal de respaldar el proyecto técnico como una entidad legal y ayudar a administrar los activos de marca e infraestructura. Se estableció el 8 de febrero de 2021 con cinco miembros corporativos fundadores (Amazon Web Services, Huawei, Google, Microsoft y Mozilla).</p>
+
         <h2>Audio resumen del lenguaje por Fazt Code (Youtube)</h2>
         <audio controls>
             <source src="multimedia/Que_es_Rust.mp3" type="audio/mp3"/>
         </audio>
-    
-        <aside>
-            <h2>Ejemplo de código</h2>
-            <p>Este fragmento de código es un ejemplo de una función en Rust que calcula el factorial de un número dado de forma recursiva:</p>
-            <pre><code>
-        fn factorial(i: u64) -> u64 {
-            if i == 0 {
-                1
-            } else {
-                i * factorial(i - 1)
-            }
+        
+        <h2>Ejemplo de código</h2>
+        <p>Este fragmento de código es un ejemplo de una función en Rust que calcula el factorial de un número dado de forma recursiva:</p>
+        <pre><code>
+    fn factorial(i: u64) -> u64 {
+        if i == 0 {
+            1
+        } else {
+            i * factorial(i - 1)
         }
-            </code></pre>
-        </aside>
-    </main> 
+    }
+        </code></pre>
+    </aside>
 
     <footer>
         <img src="multimedia/HTML5.png" alt=" HTML5 Válido!"/>
