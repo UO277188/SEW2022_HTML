@@ -4,8 +4,15 @@ Descripción de los estilos
 ******************************/
 
 /* Especificidad 001 */
+body {
+    color: black;
+    background-color: white;
+}
+
+/* Especificidad 001 
+    Hereda la propiedad color del elemento body */
 header {
-    background-color: rgb(255, 218, 162);
+    background-color: rgb(255, 227, 185);
     border-radius: 0.5em;
 }
 
@@ -15,7 +22,8 @@ header nav {
     margin: 0.3em;
 }
 
-/* Especificidad 003 */
+/* Especificidad 003 
+    Hereda la propiedad color del elemento body */
 header nav a {
     background-color: rgb(255, 255, 255);
     padding: 0.5em;
@@ -29,48 +37,50 @@ main {
     margin-right: 2em;
 }
 
-/* Especificidad 002 */
-main h2 {
-    background-color: #ffdaa2;
+/* Especificidad 002 
+    Hereda la propiedad color del elemento body */
+main h2, main h3 {
+    background-color: rgb(255, 227, 185);
     border-radius: 0.2em;
     padding: 0.2em;
 }
 
-/* Especificidad 002 */
+/* Especificidad 002 
+    Hereda la propiedad color del elemento body */
 aside h2, aside h3 {
-    background-color: rgb(255, 218, 162);
+    background-color: rgb(255, 227, 185);
     border-radius: 0.2em;
     padding: 0.2em;
 }
 
-/* Especificidad 002 */
+/* Especificidades 001, 002 */
 aside, aside video {
     height: 20vw;
     width: 35vw;
 }
 
+/* Especificidad 001 */
 code {
     font-size: 1.5em;
 }
 
-/* Especificidad 001 */
+/* Especificidad 001 
+    Hereda la propiedad color del elemento body */
 footer {
-    background-color: rgb(255, 218, 162);
+    background-color: rgb(255, 227, 185);
     border-radius: 0.5em;
 }
 
 /* Especificidad 001 */
 table {
-    border: 0.2em;
+    border: 0.15em;
     border-color: black;
     border-style: solid;
 }
 
-/* Especificidad 002 */
-thead > tr {
+/* Especificidad 002 
+    Hereda la propiedad color del elemento body */
+thead {
     text-align: center;
-    background-color: rgb(255, 218, 162);
-    border: 0.3em;
-    border-color: black;
-    border-style: solid;
+    background-color: rgb(255, 227, 185);
 }
