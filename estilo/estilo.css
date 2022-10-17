@@ -56,3 +56,26 @@ aside h2, h3 {
     padding: 0.2em;
 }
 
+aside, aside video {
+    height: 20vw;
+    width: 35vw;
+}
+
+footer {
+    background-color: rgb(250, 204, 135);
+    border-radius: 0.5em;
+}
+
+table {
+    border: 0.2em;
+    border-color: black;
+    border-style: solid;
+}
+
+thead > tr {
+    text-align: center;
+    background-color: rgb(255, 218, 162);
+    border: 0.3em;
+    border-color: black;
+    border-style: solid;
+}
