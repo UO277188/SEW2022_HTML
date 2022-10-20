@@ -7,6 +7,7 @@ Descripción de los estilos
 body {
     color: black;
     background-color: white;
+    font-size: 1.1em;
 }
 
 /* Especificidad 001 
@@ -53,11 +54,6 @@ aside h2, aside h3 {
     padding: 0.2em;
 }
 
-/* Especificidades 001, 002 */
-aside, aside video {
-    height: 20vw;
-    width: 35vw;
-}
 
 /* Especificidad 001 */
 code {
@@ -69,6 +65,7 @@ code {
 footer {
     background-color: rgb(255, 227, 185);
     border-radius: 0.5em;
+    margin-top: 1em;
 }
 
 /* Especificidad 001 */
