@@ -13,7 +13,7 @@ body {
 /* Especificidad 001 
     Hereda la propiedad color del elemento body */
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 204, 133);
     border-radius: 0.5em;
 }
 
@@ -38,22 +38,40 @@ main {
     margin-right: 2em;
 }
 
-/* Especificidad 002 
+/* Especificidades 002, 002
     Hereda la propiedad color del elemento body */
 main h2, main h3 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 204, 133);
     border-radius: 0.2em;
     padding: 0.2em;
 }
 
-/* Especificidad 002 
+/* Especificidades 002, 002
     Hereda la propiedad color del elemento body */
 aside h2, aside h3 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 204, 133);
     border-radius: 0.2em;
     padding: 0.2em;
 }
 
+/* Especifidad 012 */
+aside img:first-child {
+    margin-top: 1.3em;
+    height: 24em;
+    width: auto;
+}
+
+/* Especificidad 003 */
+aside h2 + img {
+    height: 35em;
+    width: auto;
+}
+
+/* Especificidad 003 */
+aside h2 + video {
+    height: 27em;
+    width: auto;
+}
 
 /* Especificidad 001 */
 code {
@@ -63,7 +81,7 @@ code {
 /* Especificidad 001 
     Hereda la propiedad color del elemento body */
 footer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 204, 133);
     border-radius: 0.5em;
     margin-top: 1em;
 }
@@ -78,11 +96,11 @@ table {
 /* Especificidad 002 
     Hereda la propiedad color del elemento body */
 thead {
-    text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 204, 133);
 }
 
 /* Especificidad 001 */
 a {
+    font-size: 1.1em;
     color:black;
 }
