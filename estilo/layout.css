@@ -10,12 +10,12 @@ body {
                         "main main main aside"
                         "main main main aside"
                         "footer footer footer footer";
-    gap: 0.5vw;
-    padding: 0.2vw;
+    gap: 0.5em;
+    padding: 0.2em;
 }
 
 header, main, aside, footer {
     text-align: left;
-    padding: 0.2vw;
-    font-size: 0.9vw;
+    padding: 0.2em;
+    font-size: 0.9em;
 }
