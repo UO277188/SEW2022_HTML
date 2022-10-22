@@ -8,6 +8,7 @@ body {
     color: black;
     background-color: white;
     font-size: 1.1em;
+    font-family: Helvetica, Verdana, sans-serif;
 }
 
 /* Especificidad 001 
@@ -87,20 +88,34 @@ footer {
 }
 
 /* Especificidad 001 */
+ul {
+    list-style-type: square;
+}
+
+/* Especificidad 001 */
 table {
     border: 0.15em;
     border-color: black;
     border-style: solid;
 }
 
-/* Especificidad 002 
+/* Especificidad 001
     Hereda la propiedad color del elemento body */
 thead {
     background-color: rgb(255, 204, 133);
 }
 
-/* Especificidad 001 */
-a {
-    font-size: 1.1em;
-    color:black;
+/* Especificidad 011 */
+a:link {
+    color:rgb(40, 3, 255);
+}
+
+/* Especificidad 011 */
+a:visited {
+    color: black;
+}
+
+/* Especificidad 011 */
+a:hover {
+    color: rgb(255, 0, 0);
 }
