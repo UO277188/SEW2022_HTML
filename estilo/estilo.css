@@ -58,19 +58,19 @@ aside h2, aside h3 {
 /* Especifidad 012 */
 aside img:first-child {
     margin-top: 1.3em;
-    height: 24em;
+    height: 20vw;
     width: auto;
 }
 
 /* Especificidad 003 */
 aside h2 + img {
-    height: 35em;
+    height: 30vw;
     width: auto;
 }
 
 /* Especificidad 003 */
 aside h2 + video {
-    height: 27em;
+    height: 20vw;
     width: auto;
 }
 
