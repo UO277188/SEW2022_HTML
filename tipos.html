@@ -30,49 +30,51 @@
     </header>
 
     <main>
-        <h2>Tipos</h2>
-        <p>Rust es un lenguaje con tipado fuerte y estático. Los tipos de cada variable deben saberse en tiempo de compilación, y no se pueden asignar valores de un tipo a una variable de otro tipo (dará un error). Algunos de los tipos que soporta Rust son los siguientes:</p>
-
-        <table>
-            <thead>
-                <tr> 
-                    <th id="columna_tipo"> Tipo </th> 
-                    <th id="columna_descripción"> Descripción </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr> 
-                    <td headers="columna_tipo"> bool </td> 
-                    <td headers="columna_descripción"> Valor booleano </td> 
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> u8 a u128 </td>
-                    <td headers="columna_descripción"> Enteros sin signo </td>
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> i8 a i128 </td> 
-                    <td headers="columna_descripción"> Enteros con signo </td> 
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> f32 y f64 </td> 
-                    <td headers="columna_descripción"> Números de coma flotante </td> 
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> char </td> 
-                    <td headers="columna_descripción"> Carácter UTF-32 </td> 
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> &str </td> 
-                    <td headers="columna_descripción"> Cadenas </td>
-                </tr>
-                <tr> 
-                    <td headers="columna_tipo"> [A; N] </td> 
-                    <td headers="columna_descripción"> Array "A" de tamaño "N" </td> 
-                </tr>
-            </tbody>
-        </table>
-        
-        <p>A diferencia de otros lenguajes, Rust no utiliza punteros nulos para indicar una falta de datos, ya que hacerlo puede conducir a una desreferenciación accidental. Por lo tanto, para mantener sus garantías de seguridad, es imposible eliminar la referencia de los punteros nulos a menos que el bloque de código se verifique manualmente y se declare explícitamente inseguro mediante el uso de un bloque inseguro. En su lugar, Rust utiliza un tipo Option, que tiene dos variantes, Some(T) (que indica que un valor está presente) y None (análogo al puntero nulo). Option implementa una "optimización de puntero nulo" que evita cualquier sobrecarga para los tipos que no pueden tener un valor nulo (referencias o los tipos NonZero, por ejemplo).</p>
+        <section>
+            <h2>Tipos</h2>
+            <p>Rust es un lenguaje con tipado fuerte y estático. Los tipos de cada variable deben saberse en tiempo de compilación, y no se pueden asignar valores de un tipo a una variable de otro tipo (dará un error). Algunos de los tipos que soporta Rust son los siguientes:</p>
+    
+            <table>
+                <thead>
+                    <tr> 
+                        <th id="columna_tipo"> Tipo </th> 
+                        <th id="columna_descripción"> Descripción </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> 
+                        <td headers="columna_tipo"> bool </td> 
+                        <td headers="columna_descripción"> Valor booleano </td> 
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> u8 a u128 </td>
+                        <td headers="columna_descripción"> Enteros sin signo </td>
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> i8 a i128 </td> 
+                        <td headers="columna_descripción"> Enteros con signo </td> 
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> f32 y f64 </td> 
+                        <td headers="columna_descripción"> Números de coma flotante </td> 
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> char </td> 
+                        <td headers="columna_descripción"> Carácter UTF-32 </td> 
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> &str </td> 
+                        <td headers="columna_descripción"> Cadenas </td>
+                    </tr>
+                    <tr> 
+                        <td headers="columna_tipo"> [A; N] </td> 
+                        <td headers="columna_descripción"> Array "A" de tamaño "N" </td> 
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>A diferencia de otros lenguajes, Rust no utiliza punteros nulos para indicar una falta de datos, ya que hacerlo puede conducir a una desreferenciación accidental. Por lo tanto, para mantener sus garantías de seguridad, es imposible eliminar la referencia de los punteros nulos a menos que el bloque de código se verifique manualmente y se declare explícitamente inseguro mediante el uso de un bloque inseguro. En su lugar, Rust utiliza un tipo Option, que tiene dos variantes, Some(T) (que indica que un valor está presente) y None (análogo al puntero nulo). Option implementa una "optimización de puntero nulo" que evita cualquier sobrecarga para los tipos que no pueden tener un valor nulo (referencias o los tipos NonZero, por ejemplo).</p>
+        </section>
     </main>
 
     <aside>
