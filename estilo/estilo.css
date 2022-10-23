@@ -34,6 +34,7 @@ header nav a {
     border-style: groove;
 }
 
+/* Especificidad 002 */
 header ul {
     list-style-type: none;
     display: grid;
