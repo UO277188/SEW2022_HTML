@@ -50,7 +50,7 @@ main {
 /* Especificidades 002, 002
     Heredan la propiedad color del elemento body */
 main h2, main h3 {
-    background-color: rgb(255, 204, 133);
+    background-color: #ffcc85;
     border-radius: 0.2em;
     padding: 0.2em;
 }
@@ -110,13 +110,13 @@ table {
 /* Especificidad 001
     Hereda la propiedad color del elemento body */
 thead {
-    background-color: rgb(255, 204, 133);
+    background-color: #ffcc85;
 }
 
 /* Especificidad 011
     Hereda la propiedad background-color del primer elemento donde está especificada */
 a:link {
-    color:rgb(40, 3, 255);
+    color:#1100ae;
 }
 
 /* Especificidad 011
@@ -128,5 +128,5 @@ a:visited {
 /* Especificidad 011
     Hereda la propiedad background-color del primer elemento donde está especificada */
 a:hover {
-    color: rgb(255, 0, 0);
+    color: #640000;
 }
